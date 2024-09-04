@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+}
+
+.toggleButton {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+.toggleButton svg {
+  width: 25px;
+}
+
+.link {
+  margin: 10px 0;
+}
+
+.loader-outter {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+.loader-outter .loader-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outterCircle {
+  animation: animName 2s linear infinite;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(90deg, #1173ff 0%, #ffaf15 100%);
+  margin: 20px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outterCircle .innerCircle {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 100%;
+}
+
+@keyframes animName {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  background: hsla(0, 0%, 100%, 1);
+  background: radial-gradient(
+    circle,
+    hsla(0, 0%, 100%, 1) 10%,
+    hsla(0, 0%, 87%, 1) 100%
+  );
+  background: -moz-radial-gradient(
+    circle,
+    hsla(0, 0%, 100%, 1) 10%,
+    hsla(0, 0%, 87%, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(0, 0%, 100%, 1) 10%,
+    hsla(0, 0%, 87%, 1) 100%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#DDDDDD", GradientType=1 );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .formOutter {
+  border-radius: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 50px -10px rgba(161, 159, 161, 1);
+  -moz-box-shadow: 0px 0px 50px -10px rgba(161, 159, 161, 1);
+  box-shadow: 0px 0px 50px -10px rgba(161, 159, 161, 1);
+  padding: 30px 20px;
+  width: 300px;
+}
+.login .formOutter .heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.login .formOutter .heading img {
+  object-fit: cover;
+  width: 30px;
+}
+.login .formOutter form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login .formOutter form input {
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid slategray;
+  width: 100%;
+}
+.login .formOutter form input:focus {
+  border-color: #ffaf15;
+}
+.login .formOutter form button {
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #1173ff;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  transition: all 500ms linear;
+}
+.login .formOutter form span {
+  text-align: center;
+}
+.login .formOutter form span a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.signup {
+  width: 100vw;
+  height: 100vh;
+  background: hsla(0, 0%, 100%, 1);
+  background: radial-gradient(
+    circle,
+    hsla(0, 0%, 100%, 1) 10%,
+    hsla(0, 0%, 87%, 1) 100%
+  );
+  background: -moz-radial-gradient(
+    circle,
+    hsla(0, 0%, 100%, 1) 10%,
+    hsla(0, 0%, 87%, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(0, 0%, 100%, 1) 10%,
+    hsla(0, 0%, 87%, 1) 100%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#DDDDDD", GradientType=1 );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup .formOutter {
+  border-radius: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 50px -10px rgba(161, 159, 161, 1);
+  -moz-box-shadow: 0px 0px 50px -10px rgba(161, 159, 161, 1);
+  box-shadow: 0px 0px 50px -10px rgba(161, 159, 161, 1);
+  padding: 30px 20px;
+  width: 300px;
+}
+.signup .formOutter .heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.signup .formOutter .heading img {
+  object-fit: cover;
+  width: 30px;
+}
+.signup .formOutter form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.signup .formOutter form input {
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid slategray;
+  width: 100%;
+}
+.signup .formOutter form input:focus {
+  border-color: #ffaf15;
+}
+.signup .formOutter form select {
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid slategray;
+  cursor: pointer;
+  width: 100%;
+  color: #757575;
+}
+.signup .formOutter form select:focus {
+  border-color: #ffaf15;
+}
+.signup .formOutter form button {
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #1173ff;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  transition: all 500ms linear;
+}
+.signup .formOutter form span {
+  text-align: center;
+}
+.signup .formOutter form span a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.dashboard {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Sidebar styling */
+.dashboard-sidebar {
+  transition: all 500ms ease-in-out;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  height: 100%; /* Full height */
+  overflow-y: auto; /* Scrollable content if needed */
+  z-index: 0;
+}
+.dashboard-sidebar .logo {
+  padding: 20px;
+  width: 100%;
+}
+.dashboard-sidebar .logo img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Main content styling */
+.dashboard-content {
+  flex-grow: 1;
+  transition: all 500ms ease-in-out;
+  background-color: #fff;
+}
+
+.dashboard-content .headerOutter {
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  transition: all 500ms ease-in-out;
+}
+.dashboard-content .headerInner {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+.dashboard-content .headerInner .title h2 {
+  font-family: "Encode Sans Expanded", sans-serif;
+  text-transform: uppercase;
+}
+
+.dashboard-content .dashboard-visibleArea {
+  padding-top: 70px;
+}
+
+/* css  */
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: absolute;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+/* Add User Popup CSS */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+.popup-overlay.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-content {
+  width: 30rem;
+  height: 100%;
+  position: absolute;
+  right: -40rem;
+  top: 50%;
+  transform: translateY(-50%) translateX(100%);
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.8s ease, right 0.8s ease;
+}
+
+.popup-content.slide-in {
+  right: 0;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* Ensuring the sidebar is sticky and the content scrolls */
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
